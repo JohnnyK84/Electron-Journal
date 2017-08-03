@@ -17,3 +17,27 @@ Ref: https://blog.codinghorror.com/curlys-law-do-one-thing/
 Not only relating to wireframing but also when thinking of functionality
 
 Also spent more time watching youtube tutorials on electron development
+
+Went over the construction of the app made in the week 1 tutorial and explored some of the code used:
+
+**package.json** - Completly made up of key-value pairs. Both parts are enclosed in a set of quotes **"key":"value"**
+
+https://github.com/electron/electron-quick-start/blob/master/package.json to see a complete package.json version
+
+**Main.js** - This file is where all the program logic happens, a number of .jk files can be created as we need but *main.js* file is required because we reference it in our *package.json* file.
+
+Note: Node (which electron is based on) follows the ES6 prescription of Javascrip, this is the current stable version of javasript.
+
+### Using events in an application:
+
+To trigger a javascrip function from HTML we need to use the **onclick** attribute. Say we have a function in our javascrip file called ShowMe(). We would call it from our HTML file as follows:
+
+**<input type="button" value="Click me!" onclick="ShowMe()" >**
+**<script src="functions.js"></script>** *this is providing 
+
+As we have linked this to a functinos.js file within our app this file would need to exist with the code required to execute the event:
+
+**function ShowMe() {
+    alert("I want to see a box :-)");
+}**
+
