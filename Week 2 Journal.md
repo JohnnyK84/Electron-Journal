@@ -20,7 +20,7 @@ Also spent more time watching youtube tutorials on electron development
 
 Went over the construction of the app made in the week 1 tutorial and explored some of the code used:
 
-**package.json** - Completly made up of key-value pairs. Both parts are enclosed in a set of quotes **"key":"value"**
+**package.json** - Completely made up of key-value pairs. Both parts are enclosed in a set of quotes **"key":"value"**
 
 https://github.com/electron/electron-quick-start/blob/master/package.json to see a complete package.json version
 
@@ -35,10 +35,25 @@ To trigger a javascrip function from HTML we need to use the **onclick** attribu
 <input type="button" value="Click me!" onclick="ShowMe()" >
 <script src="functions.js"></script>
 ```
-As we have linked this to a functions.js file within our app this file would need to exist with the code required to execute the event:
-
-```function ShowMe() {
+As we have linked this to a functions.js file within our app this file would need to exist with the code required to execute the event, so inside the app we'd have a funtions.js file containing:
+```
+function ShowMe() {
     alert("I want to see a box :-)");
+}
+```
+### Grabbing content rom our app:
+
+Just like a normal website, we use the <input> tag to get input from the user. This tag need an ID, we can use the getElementByIT() metehod to get this data.
+```
+<input id="content" placeholder="type something" >
+```
+and the matching javascript could like like this:
+```
+function ShowMe() {
+
+    var a = document.getElementById('content');
+
+    alert(a.value);
 }
 ```
 
