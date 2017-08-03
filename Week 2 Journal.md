@@ -31,10 +31,9 @@ Note: Node (which electron is based on) follows the ES6 prescription of Javascri
 ### Using events in an application:
 
 To trigger a javascrip function from HTML we need to use the **onclick** attribute. Say we have a function in our javascrip file called ShowMe(). We would call it from our HTML file as follows:
-
-```<input type="button" value="Click me!" onclick="ShowMe()" >
 ```
-```<script src="functions.js"></script>
+<input type="button" value="Click me!" onclick="ShowMe()" >
+<script src="functions.js"></script>
 ```
 As we have linked this to a functions.js file within our app this file would need to exist with the code required to execute the event:
 
