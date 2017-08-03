@@ -41,7 +41,7 @@ function ShowMe() {
     alert("I want to see a box :-)");
 }
 ```
-### Grabbing content rom our app:
+### Grabbing content from our app:
 
 Just like a normal website, we use the <input> tag to get input from the user. This tag need an ID, we can use the getElementByIT() metehod to get this data.
 ```
@@ -56,4 +56,10 @@ function ShowMe() {
     alert(a.value);
 }
 ```
+### Task:
+This weeks tutorial is to make a tax calculator as per the wireframe. Required:
 
+**3 labels, 3 input fields, 2 buttons**
+
+Description:
+User inputs two values (Orignal amount & Tax percentage), click button to display new total including tax
